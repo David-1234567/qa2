@@ -1,3 +1,1 @@
-file to test merge confict, this is the main branch
-to test merge conficts this is the dev branch
-this line was edited online at git hub
+to test merge conficts this is the dev branch sdf sdf
