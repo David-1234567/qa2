@@ -1,0 +1,25 @@
+name: basic_workfolw_example
+
+# ----------------
+# When to run this workflow
+# ----------------
+
+on:
+  push: #Event pusing commits to a branch
+    branches: [ main ]  # Only run on main
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+  
+
+jobs:
+  say-hello: # Job name (whatever you want)
+    runs-on: ubuntu_lastest
+    steps:     # runs sequentaily
+      - name: Checkout_repo
+        uses: actions/checkout@v4
+      - name: Say Hello
+        run: echo "Hello from GH Actions!"
+        
+
+ 
