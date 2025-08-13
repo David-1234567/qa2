@@ -14,7 +14,7 @@ on:
 
 jobs:
   say-hello: # Job name (whatever you want)
-    runs-on: ubuntu_lastest
+    runs-on: ubuntu-lastest
     steps:     # runs sequentaily
       - name: Checkout Repo
         uses: actions/checkout@v4
