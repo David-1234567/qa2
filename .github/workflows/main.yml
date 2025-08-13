@@ -16,10 +16,12 @@ jobs:
   say-hello: # Job name (whatever you want)
     runs-on: ubuntu_lastest
     steps:     # runs sequentaily
-      - name: Checkout_repo
+      - name: Checkout Repo
         uses: actions/checkout@v4
+        
       - name: Say Hello
         run: echo "Hello from GH Actions!"
+        
       - name: List files
         run: ls -a
 
